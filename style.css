@@ -1,1 +1,120 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  height: 200vh;
+}
+
+.header {
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(36, 36, 36);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+.header-logo {
+  height: 6rem;
+  width: 6rem;
+}
+.header-logo-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header-nav {
+  height: 100%;
+  width: 100rem;
+  max-width: 100rem;
+  margin: 0 2rem;
+}
+.header-nav-ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-nav-ul-li a {
+  font-size: 2.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  position: relative;
+}
+.header-nav-ul-li a:hover::after {
+  transform: scaleX(1);
+  transition: transform 0.1s ease-in;
+}
+.header-nav-ul-li a::after {
+  content: "";
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+  transform: scaleX(0);
+}
+.header-arrow {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-animation-name: pulsatingArrow;
+          animation-name: pulsatingArrow;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.header-arrow i {
+  color: #fff;
+  font-size: 5rem;
+}
+
+@-webkit-keyframes pulsatingArrow {
+  0% {
+    transform: translateY(0.5rem);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
+
+@keyframes pulsatingArrow {
+  0% {
+    transform: translateY(0.5rem);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}/*# sourceMappingURL=style.css.map */

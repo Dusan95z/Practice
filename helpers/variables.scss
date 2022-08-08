@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+@mixin montserrat-light {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+@mixin montserrat-normal {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+@mixin montserrat-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}

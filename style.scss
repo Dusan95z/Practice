@@ -1,0 +1,98 @@
+@import 'helpers/base';
+@import 'helpers/variables';
+
+body {
+  height: 200vh;
+}
+
+// HEADER AND NAVIGATION
+
+.header {
+  width: 100%;
+  height: 7rem;
+  background-color: rgb(36, 36, 36);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0;
+
+  &-logo {
+    height: 6rem;
+    width: 6rem;
+
+    &-img {
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &-nav {
+    height: 100%;
+    width: 100rem;
+    max-width: 100rem;
+    margin: 0 2rem;
+
+    &-ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      align-items: center;
+
+      &-li {
+        a {
+          font-size: 2.2rem;
+          @include montserrat-bold;
+          position: relative;
+          &:hover::after {
+            transform: scaleX(1);
+            transition: transform 0.1s ease-in;
+          }
+
+          &::after {
+            content: '';
+            height: 3px;
+            background-color: #fff;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            right: 0;
+            border-radius: 5px;
+            transform: scaleX(0);
+          }
+        }
+      }
+    }
+  }
+
+  &-arrow {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    animation-name: pulsatingArrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    i {
+      color: #fff;
+      font-size: 5rem;
+    }
+  }
+}
+
+@keyframes pulsatingArrow {
+  0% {
+    transform: translateY(0.5rem);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
