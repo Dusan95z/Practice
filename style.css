@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 *,
 ::before,
 ::after {
@@ -97,7 +98,7 @@ a {
   }
 }
 .header-nav-ul-li a {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   position: relative;
@@ -211,6 +212,60 @@ a {
     transform: translateY(0.5rem);
   }
 }
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(36, 36, 36);
+  height: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 2rem;
+}
+@media only screen and (max-width: 500px) {
+  .footer {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 2rem;
+  }
+}
+.footer-copyright {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .footer-copyright {
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 405px) {
+  .footer-copyright {
+    max-width: 20rem;
+    line-height: 2.5rem;
+  }
+}
+.footer-designer {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
+}
+@media only screen and (max-width: 500px) {
+  .footer-designer {
+    font-size: 1.2rem;
+  }
+}
+
 body {
-  height: 200vh;
+  height: 150vh;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

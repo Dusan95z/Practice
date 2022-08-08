@@ -1,7 +1,9 @@
 @import 'helpers/base';
 @import 'helpers/variables';
 @import 'styles/headerStyle';
+@import 'styles/footerStyle';
 
 body {
-  height: 200vh;
+  height: 150vh;
+  position: relative;
 }
