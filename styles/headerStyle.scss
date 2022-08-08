@@ -1,0 +1,184 @@
+// HEADER AND NAVIGATION
+
+.header {
+  width: 100%;
+  height: 7rem;
+  padding: 0 2rem;
+  background-color: rgb(36, 36, 36);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  top: 0;
+
+  @media only screen and (max-width: 800px) {
+    height: fit-content;
+    padding: 3rem 2rem;
+    position: relative;
+  }
+
+  @media only screen and (max-width: 600px) {
+    height: 12rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition: height 0.3s ease-in;
+  }
+
+  &-logo {
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    align-items: center;
+
+    &-img {
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      height: 6rem;
+      width: 6rem;
+    }
+  }
+
+  &-nav {
+    height: 100%;
+    width: 100rem;
+    max-width: 100rem;
+    margin: 0 2rem;
+
+    @media only screen and (max-width: 600px) {
+      position: absolute;
+      top: 0rem;
+      left: 0;
+      right: 0;
+      width: 100%;
+      transform: translateY(-30rem);
+      transition: transform 0.3s ease-in;
+    }
+
+    &-ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      align-items: center;
+
+      @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &-li {
+        @media only screen and (max-width: 600px) {
+          &:not(:last-child) {
+            padding-bottom: 3rem;
+          }
+        }
+
+        a {
+          font-size: 2.2rem;
+          @include montserrat-bold;
+          position: relative;
+
+          @media only screen and (max-width: 1000px) {
+            font-size: 1.8rem;
+          }
+
+          &:hover::after {
+            transform: scaleX(1);
+            transition: transform 0.1s ease-in;
+          }
+
+          &::after {
+            content: '';
+            height: 3px;
+            background-color: #fff;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            right: 0;
+            border-radius: 5px;
+            transform: scaleX(0);
+          }
+        }
+      }
+    }
+  }
+
+  &-arrow {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    animation-name: pulsatingArrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+    i {
+      color: #fff;
+      font-size: 5rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &-burgerMenu {
+    display: none;
+    height: 6rem;
+    width: 6rem;
+
+    i {
+      cursor: pointer;
+      z-index: 100;
+      color: #fff;
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-closeBurgerMenu {
+    display: none;
+    height: 6rem;
+    width: 6rem;
+
+    i {
+      cursor: pointer;
+      z-index: 100;
+      color: red;
+      font-size: 3rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.header.header-active {
+  height: 35rem;
+}
+
+.header-nav.nav-active {
+  transform: translateY(0);
+}
+
+@keyframes pulsatingArrow {
+  0% {
+    transform: translateY(0.5rem);
+  }
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0.5rem);
+  }
+}
