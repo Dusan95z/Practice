@@ -36,3 +36,4 @@ closeBurgerMenu.addEventListener('click', (e) => {
   burgerMenu.style.display = 'flex';
   closeBurgerMenu.style.display = 'none';
 });
+
