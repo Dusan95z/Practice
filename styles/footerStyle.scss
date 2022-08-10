@@ -6,12 +6,11 @@
   left: 0;
   right: 0;
   background-color: rgb(36, 36, 36);
-  height: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0 2rem;
+  padding: 1.5rem 2rem;
 
   @media only screen and (max-width: 500px) {
     height: fit-content;
@@ -23,14 +22,14 @@
     @include montserrat-normal;
     font-size: 1.8rem;
     text-align: center;
+    margin-bottom: 1rem;
 
     @media only screen and (max-width: 500px) {
-      margin-bottom: 1.5rem;
       font-size: 1.6rem;
     }
 
     @media only screen and (max-width: 405px) {
-      max-width: 20rem;
+      max-width: 22rem;
       line-height: 2.5rem;
     }
   }

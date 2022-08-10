@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;500&display=swap");
 *,
 ::before,
 ::after {
@@ -46,8 +46,8 @@ a {
   }
 }
 .home-text .home-p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
   font-size: 2rem;
   padding: 1rem 10rem 1rem 10rem;
   text-align: center;
