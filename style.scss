@@ -2,8 +2,19 @@
 @import 'helpers/variables';
 @import 'styles/headerStyle';
 @import 'styles/footerStyle';
+@import 'styles/homePageMain';
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
+  margin-top: 10rem;
+  padding-bottom: 7rem;
+
+  @media only screen and (max-width: 800px) {
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: 400px) {
+    padding-bottom: 12rem;
+  }
 }

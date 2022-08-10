@@ -1,0 +1,47 @@
+@import '../helpers/base';
+@import '../helpers/variables';
+
+.home-h1 {
+  @include montserrat-bold;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 3rem;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 3rem;
+    padding-top: 5rem;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 2.5rem;
+  }
+}
+
+.home-text {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+
+  @media only screen and (max-width: 800px) {
+    margin-top: 4rem;
+  }
+
+  .home-p {
+    @include montserrat-normal;
+    font-size: 2rem;
+    padding: 1rem 10rem 1rem 10rem;
+    text-align: center;
+
+    @media only screen and (max-width: 800px) {
+      font-size: 1.8rem;
+      padding: 1rem 5rem 1rem 5rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding: 1rem 3rem 1rem 3rem;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 1.6rem;
+    }
+  }
+}
