@@ -34,28 +34,29 @@ a {
 @media only screen and (max-width: 1000px) {
   .contact-card {
     height: 35rem;
-    width: 70rem;
+    width: 90%;
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .contact-card {
+    height: 30rem;
   }
 }
 @media only screen and (max-width: 800px) {
   .contact-card {
-    height: 30rem;
-    width: 60rem;
     margin-top: 7rem;
   }
 }
 @media only screen and (max-width: 700px) {
   .contact-card {
-    width: 50rem;
-    height: 25rem;
-    padding: 2rem;
+    flex-direction: column;
+    height: 50rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .contact-card {
-    flex-direction: column;
-    width: 80%;
-    height: 50rem;
+    height: 65rem;
   }
 }
 .contact-card-info {
@@ -71,9 +72,14 @@ a {
     width: 30rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .contact-card-info {
     height: 50%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .contact-card-info {
+    height: 60%;
   }
 }
 .contact-card-info-item {
@@ -84,25 +90,44 @@ a {
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .contact-card-info-item {
     font-size: 1.6rem;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .contact-card-info-item {
     justify-content: center;
     font-size: 1.8rem;
   }
 }
+@media only screen and (max-width: 480px) {
+  .contact-card-info-item {
+    flex-direction: column;
+  }
+}
 .contact-card-info-item:first-child {
   pointer-events: none;
 }
-.contact-card-info-item p:not(:last-child) {
+.contact-card-info-item span {
+  display: flex;
+  align-items: center;
   margin-right: 1rem;
+}
+@media only screen and (max-width: 480px) {
+  .contact-card-info-item span {
+    margin-right: 0;
+    margin-bottom: 0.2rem;
+  }
 }
 .contact-card-info-item i {
   margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+@media only screen and (max-width: 480px) {
+  .contact-card-info-item i {
+    margin-top: 0;
+  }
 }
 .contact-card-picture {
   width: 30rem;
@@ -117,10 +142,16 @@ a {
     height: 27.5rem;
   }
 }
+@media only screen and (max-width: 900px) {
+  .contact-card-picture {
+    width: 23rem;
+    height: 23rem;
+  }
+}
 @media only screen and (max-width: 800px) {
   .contact-card-picture {
-    width: 25rem;
-    height: 25rem;
+    width: 23rem;
+    height: 23rem;
   }
 }
 @media only screen and (max-width: 700px) {
