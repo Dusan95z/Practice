@@ -3,30 +3,60 @@
 
 .contact-card {
   height: 40rem;
-  width: 800rem;
-  max-width: 80rem;
+  width: 80rem;
   border: 3px solid brown;
   border-radius: 5px;
+  padding: 2rem 4rem;
   margin: 0 auto;
   margin-top: 15rem;
+  margin-bottom: 7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
   background-image: linear-gradient(
     to right bottom,
     rgb(139, 42, 42),
     rgb(233, 130, 130)
   );
 
+  @media only screen and (max-width: 1000px) {
+    height: 35rem;
+    width: 70rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    height: 30rem;
+    width: 60rem;
+    margin-top: 7rem;
+  }
+
+  @media only screen and (max-width: 700px) {
+    width: 50rem;
+    height: 25rem;
+    padding: 2rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    width: 80%;
+    height: 50rem;
+  }
+
   &-info {
     width: 40rem;
-    padding: 0 4rem;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+
+    @media only screen and (max-width: 1000px) {
+      width: 30rem;
+    }
+
+    @media only screen and (max-width: 600px) {
+      height: 50%;
+    }
 
     &-item {
       width: 100%;
@@ -34,6 +64,15 @@
       font-size: 2rem;
       display: flex;
       align-items: center;
+
+      @media only screen and (max-width: 700px) {
+        font-size: 1.6rem;
+      }
+
+      @media only screen and (max-width: 600px) {
+        justify-content: center;
+        font-size: 1.8rem;
+      }
 
       &:first-child {
         pointer-events: none;
@@ -57,6 +96,21 @@
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid brown;
+
+    @media only screen and (max-width: 1000px) {
+      width: 27.5rem;
+      height: 27.5rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      width: 25rem;
+      height: 25rem;
+    }
+
+    @media only screen and (max-width: 700px) {
+      width: 20rem;
+      height: 20rem;
+    }
 
     img {
       width: 100%;
