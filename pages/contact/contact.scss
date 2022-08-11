@@ -21,6 +21,7 @@
 
   &-info {
     width: 40rem;
+    padding: 0 4rem;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -28,17 +29,24 @@
     justify-content: space-evenly;
 
     &-item {
+      width: 100%;
+      @include openSans-medium;
+      font-size: 2rem;
       display: flex;
       align-items: center;
 
-      @include openSans-medium;
-      font-size: 2rem;
-      color: #fff;
+      &:first-child {
+        pointer-events: none;
+      }
+
       p {
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
       }
 
       i {
-        margin-right: 3rem;
+        margin-right: 1rem;
       }
     }
   }
