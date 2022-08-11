@@ -37,11 +37,15 @@ a {
 }
 
 .home-text {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin: 5rem auto;
+  padding: 1rem 0;
+  width: 80%;
+  background-image: linear-gradient(to right bottom, rgba(217, 190, 117, 0.7), rgba(252, 232, 177, 0.7));
+  border-radius: 5px;
 }
 @media only screen and (max-width: 800px) {
   .home-text {
+    width: 90%;
     margin-top: 4rem;
   }
 }
@@ -49,18 +53,12 @@ a {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 2rem;
-  padding: 1rem 10rem 1rem 10rem;
+  padding: 1rem 3rem;
   text-align: center;
 }
 @media only screen and (max-width: 800px) {
   .home-text .home-p {
     font-size: 1.8rem;
-    padding: 1rem 5rem 1rem 5rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .home-text .home-p {
-    padding: 1rem 3rem 1rem 3rem;
   }
 }
 @media only screen and (max-width: 480px) {
