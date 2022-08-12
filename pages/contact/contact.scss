@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: space-between;
   background-image: linear-gradient(
-    to right bottom,
+    to right,
     rgb(139, 42, 42),
     rgb(233, 130, 130)
   );
@@ -176,20 +176,16 @@
   }
 }
 
-// QUESTIONS FORM
+// CONTACT FORM
 
 .contact-form {
   margin: 0 auto;
   margin-bottom: 7rem;
   width: 50rem;
-  background-color: lightblue;
   border: 3px solid brown;
   border-radius: 5px;
-  background-image: linear-gradient(
-    to right bottom,
-    rgb(139, 42, 42),
-    rgb(233, 130, 130)
-  );
+
+  background-color: #c9a43f;
 
   @media only screen and (max-width: 700px) {
     width: 45rem;
@@ -209,7 +205,11 @@
     text-align: center;
     width: 100%;
     margin-bottom: 3rem;
-    background-color: #c9a43f;
+    background-image: linear-gradient(
+      to right,
+      rgb(139, 42, 42),
+      rgb(233, 130, 130)
+    );
 
     @media only screen and (max-width: 550px) {
       padding: 1rem 0;
@@ -240,7 +240,7 @@
     input {
       width: 90%;
       margin: 0 auto;
-      height: 3rem;
+      height: 4rem;
       padding-left: 1rem;
       font-size: 1.6rem;
       outline: none;
@@ -252,7 +252,7 @@
       width: 90%;
       margin: 0 auto;
       font-size: 1.6rem;
-      height: 3rem;
+      height: 4rem;
       padding-left: 0.5rem;
       border-radius: 5px;
       outline: none;
@@ -275,7 +275,7 @@
     padding: 0.5rem 1rem;
     @include openSans-medium;
     color: #fff;
-    background-color: #c9a43f;
+    background-color: #a55252;
     font-size: 2rem;
     outline: none;
     border: 2px solid brown;
@@ -284,13 +284,5 @@
     display: block;
     margin: 5rem auto 3rem auto;
     transition: all 0.3s;
-
-    &:hover {
-      background-color: rgb(85, 161, 85);
-
-      @media only screen and (max-width: 800px) {
-        background-color: #c9a43f;
-      }
-    }
   }
 }
