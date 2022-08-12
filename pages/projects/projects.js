@@ -70,6 +70,7 @@ dotsNav.addEventListener('click', (e) => {
 const taskInput = document.querySelector('.taskList-form-input');
 const addTaskBtn = document.querySelector('.taskList-form-btn');
 const taskList = document.querySelector('.taskList-ul');
+const filterBtn = document.querySelector('.filter-tasks');
 
 // adding new task
 addTaskBtn.addEventListener('click', (e) => {
@@ -81,8 +82,13 @@ addTaskBtn.addEventListener('click', (e) => {
     <button class="completed-btn"><i class="fa-solid fa-square-check"></i></button>
     <button class="trash-btn"><i class="fa-solid fa-trash-can"></i></button>
   `;
+  if (taskInput.value === '') {
+    alert('Please add some task!');
+    return;
+  }
   taskList.appendChild(newTask);
   taskInput.value = '';
+  taskInput.focus();
 });
 
 // deleting task
@@ -97,4 +103,29 @@ taskList.addEventListener('click', (e) => {
   if (task.classList[0] === 'completed-btn') {
     task.parentElement.classList.toggle('completed-task');
   }
+});
+
+filterBtn.addEventListener('click', (e) => {
+  const tasks = taskList.childNodes;
+  tasks.forEach((task) => {
+    switch (e.target.value) {
+      case 'all':
+        task.style.display = 'flex';
+        break;
+      case 'completed':
+        if (task.classList.contains('completed-task')) {
+          task.style.display = 'flex';
+        } else {
+          task.style.display = 'none';
+        }
+        break;
+      case 'uncompleted':
+        if(!task.classList.contains('completed-task')) {
+          task.style.display = 'flex';
+        } else {
+          task.style.display = 'none';
+        }
+        break;
+    }
+  });
 });

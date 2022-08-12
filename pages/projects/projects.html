@@ -49,7 +49,7 @@
     <!-- MAIN -->
     <main class="main">
       <!-- Task List -->
-      <h1 class="taskList-h1">To Do List</h1>
+      <h1 class="taskList-h1">Task List</h1>
       <div class="taskList">
         <form class="taskList-form">
           <input
@@ -60,6 +60,13 @@
           <button type="submit" class="taskList-form-btn">
             <i class="fa-solid fa-square-plus"></i>
           </button>
+          <div class="taskList-form-select">
+            <select name="tasks" class="filter-tasks">
+              <option value="all">All</option>
+              <option value="completed">Completed</option>
+              <option value="uncompleted">Uncompleted</option>
+            </select>
+          </div>
         </form>
         <div class="task-container">
           <ul class="taskList-ul"></ul>

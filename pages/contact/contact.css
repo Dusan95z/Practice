@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 html {
@@ -33,7 +34,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: linear-gradient(to right, rgb(139, 42, 42), rgb(233, 130, 130));
+  background-image: linear-gradient(to right, #8b2a2a, #e98282);
 }
 @media only screen and (max-width: 1000px) {
   .contact-card {

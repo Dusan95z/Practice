@@ -20,7 +20,7 @@
 }
 
 .taskList {
-  background-color: lightgreen;
+  background-image: linear-gradient(to right bottom, #8b2a2a, #e98282);
   border-radius: 5px;
   width: 100rem;
   height: fit-content;
@@ -54,6 +54,40 @@
       &:hover {
         background-color: black;
         color: white;
+      }
+    }
+
+    &-select {
+      margin-left: 1rem;
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 0.5rem;
+        pointer-events: none;
+        font-size: 2rem;
+      }
+
+      &:hover::after {
+        background-color: black;
+        color: white;
+      }
+
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        box-shadow: none;
+        border: none;
+        cursor: pointer;
+        width: 15rem;
+        padding: 0.85rem;
+        font-size: 1.8rem;
       }
     }
   }

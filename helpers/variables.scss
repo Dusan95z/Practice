@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;500&display=swap');
 
-$primary-color-dark: #8b2a2a;
-$primary-color-light: #db5454;
-$secondary-color: #c9a43f;
-
 @mixin montserrat-light {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
