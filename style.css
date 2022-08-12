@@ -308,12 +308,17 @@ a {
 @media only screen and (max-width: 600px) {
 }
 */
+body {
+  background-image: linear-gradient(to right bottom, #c9a43f, #db5454);
+}
+
 .home-h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 4rem;
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 6rem;
+  color: #fff;
 }
 @media only screen and (max-width: 800px) {
   .home-h1 {
@@ -332,6 +337,7 @@ a {
   font-weight: 700;
   font-size: 3rem;
   text-align: center;
+  color: #fff;
 }
 @media only screen and (max-width: 800px) {
   .home-h2 {
@@ -348,7 +354,7 @@ a {
   margin: 5rem auto;
   padding: 1rem 0;
   width: 80%;
-  background-image: linear-gradient(to right bottom, rgba(217, 190, 117, 0.7), rgba(252, 232, 177, 0.7));
+  background-image: linear-gradient(to right bottom, #db5454, #8b2a2a);
   border-radius: 5px;
 }
 @media only screen and (max-width: 800px) {
@@ -363,6 +369,7 @@ a {
   font-size: 2rem;
   padding: 1rem 3rem;
   text-align: center;
+  color: #fff;
 }
 @media only screen and (max-width: 800px) {
   .home-text .home-p {
@@ -378,7 +385,7 @@ a {
 body {
   min-height: 100vh;
   position: relative;
-  margin-top: 10rem;
+  margin-top: 7rem;
   padding-bottom: 8rem;
 }
 @media only screen and (max-width: 800px) {
