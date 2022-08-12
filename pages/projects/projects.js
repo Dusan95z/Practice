@@ -79,8 +79,10 @@ addTaskBtn.addEventListener('click', (e) => {
   newTask.classList.add('task');
   newTask.innerHTML = `
     <li class="task-item">${taskInput.value}</li>
-    <button class="completed-btn"><i class="fa-solid fa-square-check"></i></button>
-    <button class="trash-btn"><i class="fa-solid fa-trash-can"></i></button>
+    <div class="taskList-wrapper">
+      <button class="completed-btn"><i class="fa-solid fa-square-check"></i></button>
+      <button class="trash-btn"><i class="fa-solid fa-trash-can"></i></button>
+    </div>
   `;
   if (taskInput.value === '') {
     alert('Please add some task!');
@@ -95,16 +97,17 @@ addTaskBtn.addEventListener('click', (e) => {
 taskList.addEventListener('click', (e) => {
   const task = e.target;
   if (task.classList[0] === 'trash-btn') {
-    task.parentElement.classList.add('task-delete-effect');
+    task.parentElement.parentElement.classList.add('task-delete-effect');
     setTimeout(() => {
-      task.parentElement.remove();
+      task.parentElement.parentElement.remove();
     }, 300);
   }
   if (task.classList[0] === 'completed-btn') {
-    task.parentElement.classList.toggle('completed-task');
+    task.parentElement.parentElement.classList.toggle('completed-task');
   }
 });
 
+// filtering tasks
 filterBtn.addEventListener('click', (e) => {
   const tasks = taskList.childNodes;
   tasks.forEach((task) => {

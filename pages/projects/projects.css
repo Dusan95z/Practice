@@ -20,7 +20,8 @@ a {
 }
 
 /*
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: px) {
+
 }
 */
 .main {
@@ -53,6 +54,11 @@ a {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
 }
+@media only screen and (max-width: 1100px) {
+  .taskList {
+    width: 90%;
+  }
+}
 .taskList-form {
   width: 100%;
   height: 20rem;
@@ -60,11 +66,26 @@ a {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 700px) {
+  .taskList-form {
+    flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 5rem 0;
+  }
+}
 .taskList-form-input {
   padding: 0.5rem;
   font-size: 2.4rem;
   border: 1px solid black;
   border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .taskList-form-input {
+    width: 90%;
+    font-size: 2rem;
+  }
 }
 .taskList-form-btn {
   padding: 0.5rem 1rem;
@@ -75,6 +96,17 @@ a {
   margin-left: 1rem;
   transition: all 0.3s ease;
 }
+@media only screen and (max-width: 700px) {
+  .taskList-form-btn {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .taskList-form-btn {
+    font-size: 2rem;
+  }
+}
 .taskList-form-btn:hover {
   background-color: black;
   color: white;
@@ -83,6 +115,11 @@ a {
   margin-left: 1rem;
   position: relative;
   overflow: hidden;
+}
+@media only screen and (max-width: 700px) {
+  .taskList-form-select {
+    margin-left: 0;
+  }
 }
 .taskList-form-select::after {
   content: "▼";
@@ -109,6 +146,11 @@ a {
   padding: 0.85rem;
   font-size: 1.8rem;
 }
+@media only screen and (max-width: 600px) {
+  .taskList-form-select select {
+    font-size: 1.4rem;
+  }
+}
 .taskList .task-container {
   width: 100%;
   height: -webkit-fit-content;
@@ -119,14 +161,16 @@ a {
   justify-content: center;
 }
 .taskList .task-container .taskList-ul {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   list-style-type: none;
 }
 .taskList .task-container .taskList-ul .task {
+  width: 50rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -134,6 +178,18 @@ a {
   margin-bottom: 2rem;
   border-radius: 5px;
   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+@media only screen and (max-width: 700px) {
+  .taskList .task-container .taskList-ul .task {
+    flex-direction: column;
+    margin-bottom: 5rem;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .taskList .task-container .taskList-ul .task {
+    font-size: 2rem;
+  }
 }
 .taskList .task-container .taskList-ul .task:last-child {
   margin-bottom: 7rem;
@@ -143,6 +199,13 @@ a {
   background-color: #fff;
   border: 1px solid black;
   flex: 1;
+  white-space: nowrap;
+  overflow: auto;
+}
+@media only screen and (max-width: 700px) {
+  .taskList .task-container .taskList-ul .task .task-item {
+    width: 90%;
+  }
 }
 .taskList .task-container .taskList-ul .task .completed-btn {
   cursor: pointer;
@@ -153,6 +216,16 @@ a {
   border-radius: 5px;
   color: black;
   transition: all 0.3s ease;
+}
+@media only screen and (max-width: 700px) {
+  .taskList .task-container .taskList-ul .task .completed-btn {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .taskList .task-container .taskList-ul .task .completed-btn {
+    font-size: 2rem;
+  }
 }
 .taskList .task-container .taskList-ul .task .completed-btn i {
   pointer-events: none;
@@ -171,6 +244,11 @@ a {
   color: black;
   transition: all 0.3s ease;
 }
+@media only screen and (max-width: 600px) {
+  .taskList .task-container .taskList-ul .task .trash-btn {
+    font-size: 2rem;
+  }
+}
 .taskList .task-container .taskList-ul .task .trash-btn i {
   pointer-events: none;
 }
@@ -187,6 +265,16 @@ a {
 .task-delete-effect {
   transform: translateY(-8rem) rotateZ(-20deg);
   opacity: 0;
+}
+
+.taskList-wrapper {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 700px) {
+  .taskList-wrapper {
+    margin-top: 2rem;
+  }
 }
 
 .carousel-h1 {
