@@ -105,6 +105,8 @@ a {
 @media only screen and (max-width: 600px) {
   .taskList-form-btn {
     font-size: 2rem;
+    color: #164bdb;
+    border-color: #164bdb;
   }
 }
 .taskList-form-btn:hover {
@@ -225,6 +227,8 @@ a {
 @media only screen and (max-width: 600px) {
   .taskList .task-container .taskList-ul .task .completed-btn {
     font-size: 2rem;
+    color: #00ca00;
+    border-color: #00ca00;
   }
 }
 .taskList .task-container .taskList-ul .task .completed-btn i {
@@ -247,6 +251,8 @@ a {
 @media only screen and (max-width: 600px) {
   .taskList .task-container .taskList-ul .task .trash-btn {
     font-size: 2rem;
+    color: red;
+    border-color: red;
   }
 }
 .taskList .task-container .taskList-ul .task .trash-btn i {
