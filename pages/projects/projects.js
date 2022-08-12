@@ -1,4 +1,4 @@
-// CAROUSEL APP
+// CAROUSEL
 
 const carouselTrack = document.querySelector('.carousel-track');
 const slides = Array.from(carouselTrack.children);
@@ -63,4 +63,38 @@ dotsNav.addEventListener('click', (e) => {
   const targetIndex = dots.findIndex((dot) => dot === targetDot);
   const targetSlide = slides[targetIndex];
   moveToSlide(currentSlide, targetSlide, targetDot, targetIndex);
+});
+
+// TASK LIST
+
+const taskInput = document.querySelector('.taskList-form-input');
+const addTaskBtn = document.querySelector('.taskList-form-btn');
+const taskList = document.querySelector('.taskList-ul');
+
+// adding new task
+addTaskBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  const newTask = document.createElement('div');
+  newTask.classList.add('task');
+  newTask.innerHTML = `
+    <li class="task-item">${taskInput.value}</li>
+    <button class="completed-btn"><i class="fa-solid fa-square-check"></i></button>
+    <button class="trash-btn"><i class="fa-solid fa-trash-can"></i></button>
+  `;
+  taskList.appendChild(newTask);
+  taskInput.value = '';
+});
+
+// deleting task
+taskList.addEventListener('click', (e) => {
+  const task = e.target;
+  if (task.classList[0] === 'trash-btn') {
+    task.parentElement.classList.add('task-delete-effect');
+    setTimeout(() => {
+      task.parentElement.remove();
+    }, 300);
+  }
+  if (task.classList[0] === 'completed-btn') {
+    task.parentElement.classList.toggle('completed-task');
+  }
 });

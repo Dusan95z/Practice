@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 html {
@@ -28,6 +29,133 @@ a {
   .main {
     margin-top: 6rem;
   }
+}
+
+.taskList-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.taskList {
+  background-color: lightgreen;
+  border-radius: 5px;
+  width: 100rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+.taskList-form {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.taskList-form-input {
+  padding: 0.5rem;
+  font-size: 2.4rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.taskList-form-btn {
+  padding: 0.5rem 1rem;
+  font-size: 2.4rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: all 0.3s ease;
+}
+.taskList-form-btn:hover {
+  background-color: black;
+  color: white;
+}
+.taskList .task-container {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.taskList .task-container .taskList-ul {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+}
+.taskList .task-container .taskList-ul .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.taskList .task-container .taskList-ul .task:last-child {
+  margin-bottom: 7rem;
+}
+.taskList .task-container .taskList-ul .task .task-item {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border: 1px solid black;
+  flex: 1;
+}
+.taskList .task-container .taskList-ul .task .completed-btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 2.4rem;
+  margin-left: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  transition: all 0.3s ease;
+}
+.taskList .task-container .taskList-ul .task .completed-btn i {
+  pointer-events: none;
+}
+.taskList .task-container .taskList-ul .task .completed-btn:hover {
+  color: #00ca00;
+  border-color: #00ca00;
+}
+.taskList .task-container .taskList-ul .task .trash-btn {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 2.4rem;
+  margin-left: 1rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  transition: all 0.3s ease;
+}
+.taskList .task-container .taskList-ul .task .trash-btn i {
+  pointer-events: none;
+}
+.taskList .task-container .taskList-ul .task .trash-btn:hover {
+  color: red;
+  border-color: red;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.task-delete-effect {
+  transform: translateY(-8rem) rotateZ(-20deg);
+  opacity: 0;
 }
 
 .carousel-h1 {
