@@ -181,4 +181,70 @@ a {
   -o-object-fit: cover;
      object-fit: cover;
   background-position: center;
+}
+
+.contact-form {
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  width: 50rem;
+  background-color: lightblue;
+  border: 3px solid brown;
+  border-radius: 5px;
+}
+.contact-form-h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  background-color: lightgreen;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.contact-form-item {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+.contact-form-item label {
+  font-size: 1.6rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.contact-form-item input {
+  width: 100%;
+  height: 3rem;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+}
+.contact-form-item select {
+  font-size: 1.6rem;
+  height: 3rem;
+  padding-left: 0.5rem;
+}
+.contact-form-item textarea {
+  width: 100%;
+  height: 10rem;
+  font-size: 1.6rem;
+  overflow: auto;
+  padding: 0.5rem;
+}
+.contact-form-btn {
+  padding: 0.5rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  outline: none;
+  border: 1px solid brown;
+  border-radius: 5px;
+  background-color: lightgreen;
+  cursor: pointer;
+  display: block;
+  margin: 5rem auto 3rem auto;
 }/*# sourceMappingURL=contact.css.map */

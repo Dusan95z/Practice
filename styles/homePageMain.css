@@ -17,6 +17,10 @@ a {
   color: white;
 }
 
+/*
+@media only screen and (max-width: 600px) {
+}
+*/
 .home-h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
