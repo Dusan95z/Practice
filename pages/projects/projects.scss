@@ -80,6 +80,11 @@
       &:hover {
         background-color: black;
         color: white;
+
+        @media only screen and (max-width: 600px) {
+          background-color: white;
+          color: #164bdb;
+        }
       }
     }
 

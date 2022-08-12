@@ -113,6 +113,12 @@ a {
   background-color: black;
   color: white;
 }
+@media only screen and (max-width: 600px) {
+  .taskList-form-btn:hover {
+    background-color: white;
+    color: #164bdb;
+  }
+}
 .taskList-form-select {
   margin-left: 1rem;
   position: relative;
