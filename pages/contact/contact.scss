@@ -3,6 +3,14 @@
 
 // CONTACT CARD
 
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    $secondary-color,
+    $primary-color-light
+  );
+}
+
 .contact-card {
   height: 40rem;
   width: 90rem;

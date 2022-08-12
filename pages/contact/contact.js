@@ -8,7 +8,6 @@ const selectInput = document.getElementById('subject');
 const formBtn = document.querySelector('.contact-form-btn');
 
 formBtn.addEventListener('click', (e) => {
-  console.log(contactForm.checkValidity());
   if (!yourNameInput.checkValidity()) {
     yourNameInput.style.border = '3px solid red';
   } else {
