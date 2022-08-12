@@ -28,7 +28,7 @@ a {
   border-radius: 5px;
   padding: 2rem 4rem;
   margin: 0 auto;
-  margin-top: 15rem;
+  margin-top: 13rem;
   margin-bottom: 7rem;
   display: flex;
   align-items: center;
@@ -190,61 +190,81 @@ a {
   background-color: lightblue;
   border: 3px solid brown;
   border-radius: 5px;
+  background-image: linear-gradient(to right bottom, rgb(139, 42, 42), rgb(233, 130, 130));
 }
 .contact-form-h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  color: #fff;
   font-size: 3rem;
   height: 5rem;
   line-height: 5rem;
   text-align: center;
-  background-color: lightgreen;
   width: 100%;
   margin-bottom: 3rem;
+  background-color: #ccaf5e;
 }
 .contact-form-item {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  width: 50%;
+  color: #fff;
+  width: 60%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   margin-top: 2rem;
 }
 .contact-form-item label {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-right: 2rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 .contact-form-item input {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   height: 3rem;
   padding-left: 1rem;
   font-size: 1.6rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 .contact-form-item select {
+  width: 90%;
+  margin: 0 auto;
   font-size: 1.6rem;
   height: 3rem;
   padding-left: 0.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid black;
 }
 .contact-form-item textarea {
   width: 100%;
-  height: 10rem;
+  height: 12rem;
   font-size: 1.6rem;
   overflow: auto;
   padding: 0.5rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 .contact-form-btn {
   padding: 0.5rem 1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
+  color: #fff;
+  background-color: #ccaf5e;
   font-size: 2rem;
   outline: none;
-  border: 1px solid brown;
+  border: 2px solid brown;
   border-radius: 5px;
-  background-color: lightgreen;
   cursor: pointer;
   display: block;
   margin: 5rem auto 3rem auto;
+  transition: all 0.3s;
+}
+.contact-form-btn:hover {
+  background-color: rgb(101, 206, 101);
 }/*# sourceMappingURL=contact.css.map */

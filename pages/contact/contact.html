@@ -126,6 +126,7 @@
             id="yourName"
             placeholder="Your name..."
             required
+            autocomplete="off"
           />
         </div>
         <div class="contact-form-item">
@@ -136,6 +137,7 @@
             id="email"
             placeholder="E-mail..."
             required
+            autocomplete="off"
           />
         </div>
         <div class="contact-form-item">
@@ -143,6 +145,9 @@
           <select name="Subject">
             <option value="Job offer" name="Job offer" id="subject">
               Job offer
+            </option>
+            <option value="Suggestion" name="Suggestion" id="subject">
+              Suggestion
             </option>
             <option value="Complaint" name="Complaint" id="complaint">
               Complaint
@@ -158,6 +163,8 @@
             name="Message"
             id="message"
             placeholder="Type your message here..."
+            required
+            autocomplete="off"
           ></textarea>
           <input
             type="hidden"
