@@ -1,4 +1,4 @@
-// CAROUSEL
+// CAROUSEL ////////////////////////////////////////////////////////////////////////////////////////////
 
 const carouselTrack = document.querySelector('.carousel-track');
 const slides = Array.from(carouselTrack.children);
@@ -65,12 +65,34 @@ dotsNav.addEventListener('click', (e) => {
   moveToSlide(currentSlide, targetSlide, targetDot, targetIndex);
 });
 
-// TASK LIST
+// TASK LIST //////////////////////////////////////////////////////////////////////////////////////////
 
 const taskInput = document.querySelector('.taskList-form-input');
 const addTaskBtn = document.querySelector('.taskList-form-btn');
 const taskList = document.querySelector('.taskList-ul');
 const filterBtn = document.querySelector('.filter-tasks');
+
+// getting tasks from local storage
+document.addEventListener('DOMContentLoaded', (e) => {
+  let tasks;
+  if (localStorage.getItem('tasks') === null) {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem('tasks'));
+  }
+  tasks.forEach((task) => {
+    const newTask = document.createElement('div');
+    newTask.classList.add('task');
+    newTask.innerHTML = `
+    <li class="task-item">${task}</li>
+    <div class="taskList-wrapper">
+      <button class="completed-btn"><i class="fa-solid fa-square-check"></i></button>
+      <button class="trash-btn"><i class="fa-solid fa-trash-can"></i></button>
+    </div>
+  `;
+    taskList.appendChild(newTask);
+  });
+});
 
 // adding new task
 addTaskBtn.addEventListener('click', (e) => {
@@ -87,19 +109,22 @@ addTaskBtn.addEventListener('click', (e) => {
   if (taskInput.value === '') {
     alert('Please add some task!');
     return;
+  } else {
+    taskList.appendChild(newTask);
+    saveLocalTasks(taskInput.value);
   }
-  taskList.appendChild(newTask);
   taskInput.value = '';
   taskInput.focus();
 });
 
-// deleting task
+// deleting and checking task
 taskList.addEventListener('click', (e) => {
   const task = e.target;
   if (task.classList[0] === 'trash-btn') {
     task.parentElement.parentElement.classList.add('task-delete-effect');
     setTimeout(() => {
       task.parentElement.parentElement.remove();
+      removeLocalTasks(task);
     }, 300);
   }
   if (task.classList[0] === 'completed-btn') {
@@ -123,7 +148,7 @@ filterBtn.addEventListener('click', (e) => {
         }
         break;
       case 'uncompleted':
-        if(!task.classList.contains('completed-task')) {
+        if (!task.classList.contains('completed-task')) {
           task.style.display = 'flex';
         } else {
           task.style.display = 'none';
@@ -132,3 +157,27 @@ filterBtn.addEventListener('click', (e) => {
     }
   });
 });
+
+// local storage
+function saveLocalTasks(task) {
+  let tasks;
+  if (localStorage.getItem('tasks') === null) {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem('tasks'));
+  }
+  tasks.push(task);
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+function removeLocalTasks(task) {
+  let tasks;
+  if (localStorage.getItem('tasks') === null) {
+    tasks = [];
+  } else {
+    tasks = JSON.parse(localStorage.getItem('tasks'));
+  }
+  const taskIndex = task.parentElement.parentElement.children[0].innerText;
+  tasks.splice(tasks.indexOf(taskIndex), 1);
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}

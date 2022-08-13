@@ -1,4 +1,4 @@
-// HEADER ARROW FUNCTIONALITY
+// HEADER ARROW FUNCTIONALITY///////////////////////////////////////////////////////////////////////////
 
 const headerArrow = document.querySelector('.header-arrow');
 if (window.pageYOffset === 0) {
@@ -16,7 +16,7 @@ headerArrow.addEventListener('click', (e) => {
   window.scrollTo(0, 0);
 });
 
-// RESPONSIVE NAVIGATION BURGER MENU
+// RESPONSIVE NAVIGATION BURGER MENU ///////////////////////////////////////////////////////////////////
 
 const header = document.querySelector('.header');
 const nav = document.querySelector('.header-nav');
@@ -37,3 +37,4 @@ closeBurgerMenu.addEventListener('click', (e) => {
   closeBurgerMenu.style.display = 'none';
 });
 
+//   ////////////////////////////////////////////////////////////////////////////////////////

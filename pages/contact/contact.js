@@ -1,4 +1,4 @@
-// CONTACT FORM VALIDATION STYLING
+// CONTACT FORM VALIDATION STYLING /////////////////////////////////////////////////////////////////////
 
 const contactForm = document.querySelector('.contact-form');
 const yourNameInput = document.getElementById('yourName');
@@ -50,3 +50,5 @@ formBtn.addEventListener('mouseover', (e) => {
 formBtn.addEventListener('mouseout', (e) => {
   formBtn.style.backgroundColor = '#8b2a2a';
 });
+
+//   ////////////////////////////////////////////////////////////////////////////////////////
