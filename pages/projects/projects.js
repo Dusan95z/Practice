@@ -182,7 +182,7 @@ function removeLocalTasks(task) {
   localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
-// AXIOS PROJECT ///////////////////////////////////////////////////////////////////////////////////////
+// AXIOS CAT PROJECT ///////////////////////////////////////////////////////////////////////////////////
 
 const kittyBtn = document.querySelector('.axios-project-button');
 const kittyImg = document.querySelector('.axios-kitty-img');
@@ -190,7 +190,7 @@ const kittyContainer = document.querySelector('.axios-project-image');
 
 kittyBtn.addEventListener('click', (e) => {
   axios
-    .get('https://api.thecatapi.com/v1/images/search')
+    .get('https://api.thecatapi.com/v1/images/seasrch')
     .then((res) => {
       kittyImg.src = res.data[0].url;
     })
