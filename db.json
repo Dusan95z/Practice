@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "name": "Saša",
+      "age": 56,
+      "id": 1,
+      "married": true
+    },
+    {
+      "name": "a",
+      "age": "1",
+      "married": true,
+      "id": 2
+    },
+    {
+      "name": "b",
+      "age": "2",
+      "married": true,
+      "id": 3
+    },
+    {
+      "name": "",
+      "age": "",
+      "married": false,
+      "id": 4
+    }
+  ]
+}
