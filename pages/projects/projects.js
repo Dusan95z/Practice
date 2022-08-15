@@ -190,7 +190,7 @@ const kittyContainer = document.querySelector('.axios-project-image');
 
 kittyBtn.addEventListener('click', (e) => {
   axios
-    .get('https://api.thecatapi.com/v1/images/seasrch')
+    .get('https://api.thecatapi.com/v1/images/search')
     .then((res) => {
       kittyImg.src = res.data[0].url;
     })
