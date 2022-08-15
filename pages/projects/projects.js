@@ -181,3 +181,24 @@ function removeLocalTasks(task) {
   tasks.splice(tasks.indexOf(taskIndex), 1);
   localStorage.setItem('tasks', JSON.stringify(tasks));
 }
+
+// AXIOS PROJECT ///////////////////////////////////////////////////////////////////////////////////////
+
+const kittyBtn = document.querySelector('.axios-project-button');
+const kittyImg = document.querySelector('.axios-kitty-img');
+const kittyContainer = document.querySelector('.axios-project-image');
+
+kittyBtn.addEventListener('click', (e) => {
+  axios
+    .get('https://api.thecatapi.com/v1/images/search')
+    .then((res) => {
+      kittyImg.src = res.data[0].url;
+    })
+    .catch((err) => {
+      kittyContainer.innerHTML = `
+      <p class="axios-project-errorMsg">${err.message}</p>
+      <p class="axios-project-errorMsg">${err.code.replaceAll('_', ' ')}</p>
+      <p class="axios-project-errorMsg">The requested URL was not found!</p>
+      `;
+    });
+});
