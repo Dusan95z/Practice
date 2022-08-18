@@ -146,5 +146,9 @@
     font-size: 1.8rem;
     text-align: center;
     padding: 2rem;
+
+    @media only screen and (max-width: 500px) {
+      font-size: 1.6rem;
+    }
   }
 }
