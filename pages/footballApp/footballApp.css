@@ -76,6 +76,7 @@ a {
   flex-direction: column;
   align-items: center;
   color: #fff;
+  position: relative;
 }
 @media only screen and (max-width: 900px) {
   .footballApp-clubCard {
@@ -145,4 +146,34 @@ a {
 }
 .footballApp-clubCard-btn:hover {
   background-color: #55a155;
+}
+
+.footballApp-clubCard-closed > * {
+  display: none;
+}
+
+.footballApp-modal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footballApp-modal-closeBtn {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  color: red;
+  font-size: 4rem;
+  cursor: pointer;
+}
+.footballApp-modal-closeBtn i {
+  pointer-events: none;
+}
+.footballApp-modal-details {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 2rem;
 }/*# sourceMappingURL=footballApp.css.map */

@@ -5,7 +5,8 @@
     "stadium": "Santiago Bernabeu",
     "titles": 15,
     "best_player": "Cristiano Ronaldo",
-    "image": "https://c4.wallpaperflare.com/wallpaper/437/688/944/soccer-real-madrid-c-f-real-madrid-logo-wallpaper-preview.jpg"
+    "image": "https://c4.wallpaperflare.com/wallpaper/437/688/944/soccer-real-madrid-c-f-real-madrid-logo-wallpaper-preview.jpg",
+    "details": "On March 6, 1902, the Madrid Foot Ball Club is founded by a group of fans in Madrid, Spain. Later known as Real Madrid, the club would become the most successful European football (soccer) franchise of the 20th century."
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "stadium": "Camp Nou",
     "titles": 10,
     "best_player": "Lionel Messi",
-    "image": "https://c4.wallpaperflare.com/wallpaper/778/439/618/soccer-fc-barcelona-logo-wallpaper-preview.jpg"
+    "image": "https://c4.wallpaperflare.com/wallpaper/778/439/618/soccer-fc-barcelona-logo-wallpaper-preview.jpg",
+    "details": "FC Barcelona, also known simply as Barcelona and familiarly as Barça, is based in Barcelona, Catalonia, Spain. The team was founded in 1899 by a group of Swiss, English, German and Catalan footballers led by Joan Gamper. The club played amateur football until 1910 in various regional competitions."
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "stadium": "Old Traford",
     "titles": 8,
     "best_player": "Wayne Rooney",
-    "image": "https://i.pinimg.com/originals/e5/be/09/e5be09331e95a3babd999f122e106b31.jpg"
+    "image": "https://i.pinimg.com/originals/e5/be/09/e5be09331e95a3babd999f122e106b31.jpg",
+    "details": "The team first entered the English First Division, then the highest league in English football, for the start of the 1892-93 season. Our club name changed to Manchester United Football Club in 1902, and we won the first of our 20 English League titles in 1908. In 1910, we moved to Old Trafford, our current stadium."
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "stadium": "Anfield Road",
     "titles": 6,
     "best_player": "Moohamed Salah",
-    "image": "https://epostalnews.com/wallpaper/wallpaper/20220419/liverpool-fc-wallpaper-full-hd-pictures-liverpool-logo-preview.webp"
+    "image": "https://epostalnews.com/wallpaper/wallpaper/20220419/liverpool-fc-wallpaper-full-hd-pictures-liverpool-logo-preview.webp",
+    "details": "Founded in 1892, the club joined the Football League the following year and has played at Anfield since its formation. Liverpool established itself as a major force in English and European football in the 1970s and 1980s when Bill Shankly and Bob Paisley led the club to 11 League titles and seven European trophies."
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "stadium": "Juventus Arena",
     "titles": 10,
     "best_player": "Alessandro Del Piero",
-    "image": "https://i.pinimg.com/originals/d8/97/6a/d8976ac1360bc71edcc743ddd8780264.jpg"
+    "image": "https://i.pinimg.com/originals/d8/97/6a/d8976ac1360bc71edcc743ddd8780264.jpg",
+    "details": "Juventus were founded as Sport-Club Juventus in late 1897 by pupils from the Massimo d'Azeglio Lyceum school in Turin, among them the brothers Eugenio and Enrico Canfari, but were renamed as Foot-Ball Club Juventus two years later. The club joined the Italian Football Championship in 1900."
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "stadium": "San Siro",
     "titles": 9,
     "best_player": "Zlatan Ibrahimovic",
-    "image": "https://c4.wallpaperflare.com/wallpaper/619/22/431/soccer-a-c-milan-emblem-logo-wallpaper-preview.jpg"
+    "image": "https://c4.wallpaperflare.com/wallpaper/619/22/431/soccer-a-c-milan-emblem-logo-wallpaper-preview.jpg",
+    "details": "AC Milan was founded as Milan Foot-Ball and Cricket Club in 1899 by English expatriate Herbert Kilpin. The club claims 16 December of that year as their foundation date, but historical evidence seems to suggest that the club was actually founded a few days earlier, most likely on 13 December."
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "stadium": "Allianz Arena",
     "titles": 12,
     "best_player": "Robert Lewandowski",
-    "image": "https://w0.peakpx.com/wallpaper/456/863/HD-wallpaper-fc-bayern-munchen-germany-football-emblem-bayern-logo.jpg"
+    "image": "https://w0.peakpx.com/wallpaper/456/863/HD-wallpaper-fc-bayern-munchen-germany-football-emblem-bayern-logo.jpg",
+    "details": "Bayern Munich was founded in 1900 and has become Germany's most famous and successful football club. Almost all of Bayern's success has come since the 1960s. Bayern Munich was formed when members of the MTV 1879 Munich sports club broke away to form their own club."
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "stadium": "Westfallen",
     "titles": 4,
     "best_player": "Marco Reus",
-    "image": "https://besthqwallpapers.com/Uploads/16-10-2017/24254/thumb2-borussia-dortmund-4k-logo-bvb-emblem.jpg"
+    "image": "https://besthqwallpapers.com/Uploads/16-10-2017/24254/thumb2-borussia-dortmund-4k-logo-bvb-emblem.jpg",
+    "details": "Founded in 1909 by eighteen football players from Dortmund, the football team is part of a large membership-based sports club with more than 145,000 members, making Borussia Dortmund the second largest sports club by membership in Germany. The club has active departments in other sports, namely in women's handball."
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "stadium": "Parc des Princes",
     "titles": 5,
     "best_player": "Neymar",
-    "image": "https://cdn.wallpapersafari.com/90/26/ZGLNEj.jpg"
+    "image": "https://cdn.wallpapersafari.com/90/26/ZGLNEj.jpg",
+    "details": "The Parisians were founded in 1970, following the merger of Paris FC and Stade Saint-Germain. PSG won their first major honour, the French Cup, in 1982 and their first Division 1 title in 1986."
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "stadium": "Stade Louis II",
     "titles": 3,
     "best_player": "Radamel Falcao",
-    "image": "https://w0.peakpx.com/wallpaper/937/452/HD-wallpaper-soccer-as-monaco-fc-soccer-logo.jpg"
+    "image": "https://w0.peakpx.com/wallpaper/937/452/HD-wallpaper-soccer-as-monaco-fc-soccer-logo.jpg",
+    "details": "AS Monaco FC was founded on 1 August 1919 as a unification of numerous local clubs based in France and the principality. Then, the multiple sports club of the Association Sportive de Monaco was founded on 23 August 1924."
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "stadium": "Marakana",
     "titles": 1,
     "best_player": "Aleksandar Katai",
-    "image": "https://static.kupindoslike.com/crvena-zvezda-tapeta-za-sobu_slika_XL_48433545.jpg"
+    "image": "https://static.kupindoslike.com/crvena-zvezda-tapeta-za-sobu_slika_XL_48433545.jpg",
+    "details": "With 33 national championships, 26 national cups, 2 national supercups, 2 national champions leagues and one league cup between Serbian and Yugoslav competitions, Red Star was the most successful club in Yugoslavia and finished first in the Yugoslav First League all-time table, and is the most successful club in Serbia."
   },
   {
     "id": 12,
@@ -93,6 +104,7 @@
     "stadium": "JNA",
     "titles": 0,
     "best_player": "Lazar Markovic",
-    "image": "https://rs.n1info.com/wp-content/uploads/2015/01/partizan-14628.jpeg"
+    "image": "https://rs.n1info.com/wp-content/uploads/2015/01/partizan-14628.jpeg",
+    "details": "Partizan was founded by young high officers of the Yugoslav People's Army (JNA) in 1945 in Belgrade, as part of the Yugoslav Sports Association Partizan. Their home ground is the Partizan Stadium in Belgrade, where they have played since 1949."
   }
 ]
