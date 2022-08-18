@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
           if (e.target.classList.contains('footballApp-modal-closeBtn')) {
             card.classList.remove('footballApp-clubCard-closed');
             card.innerHTML = `
-          <div class="footballApp-clubCard">
             <div class="footballApp-clubCard-image">
               <img src="${data[i].image}" alt="logo" />
             </div>
@@ -48,7 +47,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
             <button type="button" class="footballApp-clubCard-btn">
               See More
             </button>
-          </div>
           `;
           }
         });
