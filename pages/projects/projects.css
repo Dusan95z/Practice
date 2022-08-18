@@ -1,5 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;500&display=swap");
 *,
 ::before,
 ::after {
@@ -24,15 +27,30 @@ a {
 
 }
 */
-.main {
-  margin-top: 12rem;
-}
-@media only screen and (max-width: 800px) {
-  .main {
-    margin-top: 6rem;
-  }
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
 }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*
+@media only screen and (max-width: px) {
+
+}
+*/
 .taskList-h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -289,6 +307,30 @@ a {
   }
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*
+@media only screen and (max-width: px) {
+
+}
+*/
 .carousel-h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -440,6 +482,30 @@ a {
   display: none;
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*
+@media only screen and (max-width: px) {
+
+}
+*/
 .axios-project-h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -555,5 +621,13 @@ a {
   }
   100% {
     transform: scale(1.1);
+  }
+}
+.main {
+  margin-top: 12rem;
+}
+@media only screen and (max-width: 800px) {
+  .main {
+    margin-top: 6rem;
   }
 }/*# sourceMappingURL=projects.css.map */

@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;500&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*
+@media only screen and (max-width: px) {
+
+}
+*/
+.carousel-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.carousel {
+  position: relative;
+  width: 50%;
+  height: 50rem;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+@media only screen and (max-width: 1600px) {
+  .carousel {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .carousel {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .carousel {
+    height: 40rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .carousel {
+    height: 35rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .carousel {
+    height: 30rem;
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .carousel {
+    height: 25rem;
+  }
+}
+
+.carousel-container {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.carousel-track {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: transform ease-in 250ms;
+}
+
+.carousel-slide {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 4rem;
+  color: #fff;
+}
+@media only screen and (max-width: 800px) {
+  .carousel-button {
+    font-size: 3rem;
+  }
+}
+.carousel-button-left {
+  left: -5rem;
+}
+@media only screen and (max-width: 600px) {
+  .carousel-button-left {
+    left: -3rem;
+  }
+}
+.carousel-button-right {
+  right: -5rem;
+}
+@media only screen and (max-width: 600px) {
+  .carousel-button-right {
+    right: -3rem;
+  }
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-dot {
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 2rem 1rem 0 1rem;
+  cursor: pointer;
+  outline: none;
+}
+@media only screen and (max-width: 800px) {
+  .carousel-dot {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .carousel-dot {
+    margin: 2rem 0.5rem 0 0.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .carousel-dot {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.carousel-dot.current-slide {
+  background: #fff;
+}
+
+.carousel-btn-hidden {
+  display: none;
+}/*# sourceMappingURL=carouselApp.css.map */

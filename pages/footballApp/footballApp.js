@@ -53,14 +53,3 @@ document.addEventListener('DOMContentLoaded', (e) => {
       });
     });
 });
-
-/*
-            const clubCard = e.target.parentElement;
-            clubCard.classList.add('footballApp-clubCard-closed');
-            clubCard.innerHTML = `
-            <div class="footballApp-modal">
-              <span title="Close details" class="footballApp-modal-closeBtn"><i class="fa-solid fa-xmark"></i></span>
-              <p class="footballApp-modal-details">${data[i].details}</p>
-            </div>
-          `;
-*/
