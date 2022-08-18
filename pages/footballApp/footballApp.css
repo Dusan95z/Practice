@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;500&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*
+@media only screen and (max-width: px) {
+
+}
+*/
+.main {
+  margin-top: 12rem;
+}
+@media only screen and (max-width: 800px) {
+  .main {
+    margin-top: 6rem;
+  }
+}
+
+.footballApp-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+.footballApp {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 7rem 5rem;
+}
+@media only screen and (max-width: 1300px) {
+  .footballApp {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .footballApp {
+    grid-template-columns: 1fr;
+  }
+}
+.footballApp-clubCard {
+  background-image: linear-gradient(to left top, #8b2a2a, #ce5b5b);
+  width: 35rem;
+  height: 50rem;
+  background-color: lightgreen;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+@media only screen and (max-width: 900px) {
+  .footballApp-clubCard {
+    width: 30rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footballApp-clubCard {
+    width: 90%;
+    height: 46rem;
+  }
+}
+.footballApp-clubCard-image {
+  width: 100%;
+  height: 40%;
+  overflow: hidden;
+}
+.footballApp-clubCard-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.footballApp-clubCard-name {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2.4rem;
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 900px) {
+  .footballApp-clubCard-name {
+    font-size: 2.2rem;
+  }
+}
+.footballApp-clubCard-p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+@media only screen and (max-width: 900px) {
+  .footballApp-clubCard-p {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .footballApp-clubCard-p {
+    font-size: 1.4rem;
+  }
+}
+.footballApp-clubCard-btn {
+  padding: 0.5rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  background-color: #c9a43f;
+  font-size: 2rem;
+  outline: none;
+  border: 2px solid brown;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin-top: 3rem;
+  transition: all 0.3s;
+}
+.footballApp-clubCard-btn:hover {
+  background-color: #55a155;
+}/*# sourceMappingURL=footballApp.css.map */

@@ -202,3 +202,7 @@ kittyBtn.addEventListener('click', (e) => {
       `;
     });
 });
+
+// PROJECTS APP ////////////////////////////////////////////////////////////////////////////////////////
+
+// https://www.youtube.com/watch?v=dtKciwk_si4

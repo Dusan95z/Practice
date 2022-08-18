@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Real Madrid",
+    "stadium": "Santiago Bernabeu",
+    "titles": 15,
+    "best_player": "Cristiano Ronaldo",
+    "image": "https://c4.wallpaperflare.com/wallpaper/437/688/944/soccer-real-madrid-c-f-real-madrid-logo-wallpaper-preview.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Barcelona",
+    "stadium": "Camp Nou",
+    "titles": 10,
+    "best_player": "Lionel Messi",
+    "image": "https://c4.wallpaperflare.com/wallpaper/778/439/618/soccer-fc-barcelona-logo-wallpaper-preview.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Manchester United",
+    "stadium": "Old Traford",
+    "titles": 8,
+    "best_player": "Wayne Rooney",
+    "image": "https://i.pinimg.com/originals/e5/be/09/e5be09331e95a3babd999f122e106b31.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Liverpool",
+    "stadium": "Anfield Road",
+    "titles": 6,
+    "best_player": "Moohamed Salah",
+    "image": "https://epostalnews.com/wallpaper/wallpaper/20220419/liverpool-fc-wallpaper-full-hd-pictures-liverpool-logo-preview.webp"
+  },
+  {
+    "id": 5,
+    "name": "Juventus",
+    "stadium": "Juventus Arena",
+    "titles": 10,
+    "best_player": "Alessandro Del Piero",
+    "image": "https://i.pinimg.com/originals/d8/97/6a/d8976ac1360bc71edcc743ddd8780264.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Milan",
+    "stadium": "San Siro",
+    "titles": 9,
+    "best_player": "Zlatan Ibrahimovic",
+    "image": "https://c4.wallpaperflare.com/wallpaper/619/22/431/soccer-a-c-milan-emblem-logo-wallpaper-preview.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Bayern",
+    "stadium": "Allianz Arena",
+    "titles": 12,
+    "best_player": "Robert Lewandowski",
+    "image": "https://w0.peakpx.com/wallpaper/456/863/HD-wallpaper-fc-bayern-munchen-germany-football-emblem-bayern-logo.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Borussia Dortmund",
+    "stadium": "Westfallen",
+    "titles": 4,
+    "best_player": "Marco Reus",
+    "image": "https://besthqwallpapers.com/Uploads/16-10-2017/24254/thumb2-borussia-dortmund-4k-logo-bvb-emblem.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Paris Saint-Germain",
+    "stadium": "Parc des Princes",
+    "titles": 5,
+    "best_player": "Neymar",
+    "image": "https://cdn.wallpapersafari.com/90/26/ZGLNEj.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Monaco",
+    "stadium": "Stade Louis II",
+    "titles": 3,
+    "best_player": "Radamel Falcao",
+    "image": "https://w0.peakpx.com/wallpaper/937/452/HD-wallpaper-soccer-as-monaco-fc-soccer-logo.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Crvena Zvezda",
+    "stadium": "Marakana",
+    "titles": 1,
+    "best_player": "Aleksandar Katai",
+    "image": "https://static.kupindoslike.com/crvena-zvezda-tapeta-za-sobu_slika_XL_48433545.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Partizan",
+    "stadium": "JNA",
+    "titles": 0,
+    "best_player": "Lazar Markovic",
+    "image": "https://rs.n1info.com/wp-content/uploads/2015/01/partizan-14628.jpeg"
+  }
+]
