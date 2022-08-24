@@ -169,6 +169,14 @@
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 
+  @media only screen and (max-width: 500px) {
+    margin-bottom: 6.4rem;
+  }
+
+  @media only screen and (max-width: 400px) {
+    margin-bottom: 9.5rem;
+  }
+
   &-day {
     width: 40rem;
     height: 50rem;
