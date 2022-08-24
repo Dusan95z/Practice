@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@400;500&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/*
+@media only screen and (max-width: px) {
+
+}
+*/
+.custom-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 12rem;
+  color: #fff;
+}
+
+.gymPlan {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+  background-image: linear-gradient(to right, #8b2a2a, #cf4949);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.gymPlan .gymPlan-nav {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, #92731d, #a0812b);
+}
+.gymPlan .gymPlan-nav .gymPlan-nav-ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.gymPlan .gymPlan-nav .gymPlan-nav-ul .gymPlan-nav-ul-li .gymPlan-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 2.2rem;
+  transition: all 0.3s ease;
+}
+.gymPlan .gymPlan-nav .gymPlan-nav-ul .gymPlan-nav-ul-li .gymPlan-link:hover {
+  color: #dd2121;
+}
+.gymPlan .gymPlan-programms {
+  width: 100%;
+  margin: 5rem 0;
+}
+.gymPlan .gymPlan-programms .gymPlan-day {
+  width: 50rem;
+  height: 60rem;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #92731d, #a0812b);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 5px;
+}
+.gymPlan .gymPlan-programms .gymPlan-day h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+.gymPlan .gymPlan-programms .gymPlan-day p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: white;
+}
+.gymPlan .gymPlan-programms .gymPlan-day p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.gymPlan .gymPlan-programms .active-day {
+  display: flex;
+}/*# sourceMappingURL=gymPlan.css.map */
